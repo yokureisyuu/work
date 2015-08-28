@@ -1,0 +1,89 @@
+/*找免费精品模板就上 www.865171.cn*/
+*{ margin:0; padding:0;}
+body{ font-size:12px; font-family:"微软雅黑",Arial, Helvetica, sans-serif; color:#454545 }
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+a{ text-decoration:none; color:#454545;}
+a:hover{ text-decoration:underline; color:#ff0000;}
+ul{ list-style:none;}
+li{ list-style:none;}
+.clear{ clear:both; width:100%; height:0; overflow:hidden;}
+img{ border:none;}
+em{ font-style:normal;}
+
+.container {margin:0;position:relative;width:1000px;height:264px; background:url(bg.jpg) no-repeat left bottom; margin-bottom:35px;}
+#slider {width:1000px; height:261px;}
+#slider li{width:1000px;height:261px;overflow:hidden;}
+#slider li img{width:1000px;height:261px;overflow:hidden;}
+#prevBtn, #nextBtn,  #slider1next, #slider1prev {display:block;width:33px;height:33px;position:absolute;left:55px;top:110px;z-index:1000;}
+#nextBtn, #slider1next {left:910px;}
+#prevBtn a, #nextBtn a,  #slider1next a, #slider1prev a {display:block;position:relative;cursor:pointer;width:33px;height:33px;background:url(left.png) no-repeat 0 0;}
+#nextBtn a, #slider1next a {background:url(right.png) no-repeat 0 0;}
+
+.querybtn0{width:50px; height:25px; border:none; overflow:hidden;background:url(button.jpg);color: white;}
+
+
+
+
+.list{}
+.list dt{ background:url(bar1000.jpg) repeat; height:33px; width:1000px;  line-height:33px; margin-bottom:6px;}
+
+.list dt span,.list dd span{ display:block; float:left; overflow:hidden; }
+
+.list dt span.N1{ width:50px; text-align:center}
+.list dt span.N2{ width:300px; text-align:center}
+.list dt span.N3{ width:300px;text-align:center}
+.list dt span.N4{ width:50px; text-align:center}
+.list dt span.N5{ width:150px; text-align:center}
+.list dt span.LN1{ width:50px; text-align:center}
+.list dt span.LN2{ width:150px;text-align:center}
+.list dt span.LN3{ width:100px;text-align:center}
+.list dt span.LN4{ width:118px;text-align:center}
+.list dt span.LN5{ width:100px;text-align:center}
+.list dt span.TN1{ width:50px; text-align:center}
+.list dt span.TN2{ width:550px; text-align:center}
+.list dt span.TN3{ width:150px;text-align:center}
+.list dt span.TN4{ width:100px; text-align:center}
+.list dt span.TN5{ width:300px; text-align:center}
+.list dt span.TN6{ width:200px; text-align:center}
+/* .list dd{border-bottom:1px dashed #cacaca; height:32px; line-height:32px;} */
+.list dd{height:32px; line-height:32px;}
+.list dd span.N1{ width:50px; text-align:center}
+.list dd span.N2{ width:300px; text-align:center}
+.list dd span.N3{ width:300px;text-align:center}
+.list dd span.N4{ width:50px; text-align:center}
+.list dd span.N5{ width:150px; text-align:center}
+.list dd span.LN1{ width:50px; text-align:center}
+.list dd span.LN2{ width:150px;text-align:center}
+.list dd span.LN3{ width:100px;text-align:center}
+.list dd span.LN4{ width:118px;text-align:center}
+.list dd span.LN5{ width:100px;text-align:center}
+.list dd span.TN1{ width:50px; text-align:center}
+.list dd span.TN2{ width:550px; text-align:left}
+.list dd span.TN3{ width:150px;text-align:center}
+.list dd span.TN4{ width:100px; text-align:center}
+.list dd span.TN5{ width:300px; text-align:left}
+.list dd span.TN6{ width:200px; text-align:left}
+.left{ width:580px; float:left; display:inline}
+.l{ widows:72px; float:left;height:28px;}
+.c{ padding:8px 0}
+.r{ width:470px; float:right;}
+
+
+.text0{ width:150px; border:none; background:url(input.jpg) no-repeat; height:28px; line-height:28px;}
+.text1{ width:250px; border:none; background:url(input.jpg) no-repeat; height:28px; line-height:28px;}
+.textAddress{ width:300px; border:none; background:url(textarea.jpg) no-repeat; height:28px; line-height:28px;}
+
+.text2{height:22px; width:194px; border:none; padding:3px; background:url(text1.jpg) no-repeat;}
+.text3{border:none; padding:3px; background:url(text1.jpg) no-repeat;}
+.textarea{ background:url(textarea.jpg) no-repeat; width:400px; height:150px;}
+.select1{ width:150px; height:25px;margin:0 4px 0 0; display:inline;}
+
+
+.querybtn{width:100px; height:25px; border:none; overflow:hidden;background:url(button.jpg);margin: 20px 0 0 50px;color: white;}
+.querybtn1{width:100px; height:25px; border:none; overflow:hidden;background:url(button.jpg);color: white;}
+
+
+.lclLeft{ width:1000px; float:left; margin:0 0 0 0; display:inline}
+
+.more2{ text-align:center; padding:15px 0}
+.more2 a{ color:#444; padding:0 5px;}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 	 <bean id="userDao" class="order.db.DAO.UserDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>
+    <bean id="sceneryDao" class="order.db.DAO.SceneryDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>     
+        <bean id="announcementDao" class="order.db.DAO.AnnouncementDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>  
+     
+      <bean id="partnersDao" class="order.db.DAO.PartnersDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>  
+     
+     <bean id="productDao" class="order.db.DAO.ProductDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>     
+       <bean id="storeDao" class="order.db.DAO.StoreDao">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>   
+     
+     <bean id="adminUserDAO" class="order.db.DAO.AdminUserDAO">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>
+     <bean id="theWayDAO" class="order.db.DAO.TheWayDAO">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>     
+      <bean id="introDAO" class="order.db.DAO.IntroDAO">
+         <property name="hibernateTemplate"> 
+            <ref bean="hibernateTemplate"/>
+          </property>   
+     </bean>                                    
+   	<bean id="userService" class="order.service.UserService">
+         <property name="userDao">
+             <ref bean="userDao"/>
+         </property>
+     </bean>      
+     <bean id="storeService" class="order.service.StoreService">
+         <property name="storeDao">
+             <ref bean="storeDao"/>
+         </property>
+     </bean>
+      <bean id="adminUserService" class="order.service.AdminUserService">
+         <property name="adminUserDAO">
+             <ref bean="adminUserDAO"/>
+         </property>
+     </bean>   
+     <bean id="sceneryService" class="order.service.SceneryService">
+         <property name="sceneryDao">
+             <ref bean="sceneryDao"/>
+         </property>
+     </bean>
+     <bean id="productService" class="order.service.ProductService">
+         <property name="productDao">
+             <ref bean="productDao"/>
+         </property>
+     </bean>
+    <bean id="theWayService" class="order.service.TheWayService">
+         <property name="theWayDAO">
+             <ref bean="theWayDAO"/>
+         </property>
+     </bean> 
+     <bean id="introService" class="order.service.IntroService">
+         <property name="introDAO">
+             <ref bean="introDAO"/>
+         </property>
+     </bean>
+      <bean id="announcementService" class="order.service.AnnouncementService">
+         <property name="announcementDao">
+             <ref bean="announcementDao"/>
+         </property>
+     </bean>
+       <bean id="partnersService" class="order.service.PartnersService">
+         	<property name="partnersDao">
+             <ref bean="partnersDao"/>
+         </property>
+     </bean>                                          
+</beans>

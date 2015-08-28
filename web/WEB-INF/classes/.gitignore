@@ -1,0 +1,11 @@
+/applicationContext.xml
+/com/
+/fckeditor.properties
+/jdbc.properties
+/log4j.properties
+/message.properties
+/order/
+/order.hbm.xml
+/spring-bean.xml
+/struts.xml
+/wechat4j.properties

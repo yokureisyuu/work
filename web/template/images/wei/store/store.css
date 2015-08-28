@@ -1,0 +1,274 @@
+* {
+	font-family: Î¢ÈíÑÅºÚ, Arial, ËÎÌå;
+	-webkit-text-size-adjust: none;
+}
+
+td,th,div,input,select,textarea,li,ol,dt,dd,h1,h2,h3,h4,h5,h6 {
+	font-size: 12px;
+	color: #333;
+}
+
+header,footer,section,aside,nav,hgroup,figure,figcaption {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+font,span {
+	font-size: 12px;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote
+	{
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+input[type='text'],input[type='number'],input[type='password'],input[type='reset'],input[type='submit'],input[type='button'],input[type='tel'],button,textarea
+	{
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: 1px solid #ddd;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff6600;
+	text-decoration: underline;
+}
+
+a.red {
+	color: red;
+	text-decoration: none;
+}
+
+a.red:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.clear {
+	margin: 0px auto;
+	clear: both;
+	height: 0px;
+	font-size: 0px;
+	overflow: hidden;
+}
+
+body,html {
+	background: #999999;
+	min-height: 100%;
+}
+
+#your_address {
+	margin: 8px;
+	display: none;
+}
+
+#your_address dt {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 6px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-image: linear-gradient(bottom, #076404 0, #4FBA4D 100%);
+	background-image: -moz-linear-gradient(bottom, #076404 0, #4FBA4D 100%);
+	background-image: -webkit-linear-gradient(bottom, #076404 0, #4FBA4D 100%);
+}
+
+#your_address dd {
+	background: #fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 12px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#stores {
+	margin: 8px;
+	clear: both;
+}
+
+#stores * {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#stores .store {
+	margin-bottom: 8px;
+}
+
+#stores .store h1 {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 8px;
+	background: #ccc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#stores .store h1 .store_name {
+	display: block;
+	float: left;
+	font-weight: bold;
+	color: #fff;
+	max-width: 260px;
+	overflow: hidden;
+}
+
+#stores .store h1 .dis {
+	display: none;
+	float: right;
+}
+
+#stores .store .addr {
+	background: #fff;
+}
+
+#stores .store .item {
+	background: #fff;
+	position: relative;
+	padding: 8px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#stores .store .item .address_ico {
+	width: 16px;
+	height: 16px;
+	background: url(storesbg.png) -1px 0 no-repeat;
+	position: absolute;
+	left: 5px;
+	top: 12px;
+}
+
+#stores .store .item .address {
+	width: auto;
+	padding: 4px 35px 4px 22px;
+}
+
+#stores .store .item .lbs {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	background: url(storesbg.png) -1px -35px no-repeat;
+}
+
+#stores .store .item .lbs a {
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+#stores .store .item .tel_ico {
+	width: 16px;
+	height: 18px;
+	background: url(storesbg.png) -3px -16px no-repeat;
+	position: absolute;
+	left: 5px;
+	top: 12px;
+}
+
+#stores .store .item .telephone {
+	width: auto;
+	padding-left: 22px;
+	padding-right: 35px;
+}
+
+#stores .store .item .telephone li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	width: 100%;
+}
+
+#stores .store .item .fax_ico {
+	width: 16px;
+	height: 18px;
+	background: url(storesbg.png) -3px -48px no-repeat;
+	position: absolute;
+	left: 5px;
+	top: 12px;
+}
+
+#stores .store .item .fax {
+	width: auto;
+	padding-left: 22px;
+	padding-right: 35px;
+}
+
+#stores .store .item .fax li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+}
+
+#stores .store  .last {
+	border: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#stores .nearest h1 {
+	background-image: linear-gradient(bottom, #FE7002 0, #FEAC00 100%);
+	background-image: -moz-linear-gradient(bottom, #FE7002 0, #FEAC00 100%);
+	background-image: -webkit-linear-gradient(bottom, #FE7002 0, #FEAC00 100%);
+}
+
+#stores .nearest h1 .dis {
+	color: #fff;
+	font-weight: bold;
+}
+
+.content img {
+	width: 100%;
+}
+
+.content {
+	color: #3e3e3e;
+	line-height: 1.5;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.contenttext {
+	color: #3e3e3e;
+	line-height: 1.5;
+	padding: 15px;
+}
+
+.contenttext p {
+	*zoom: 1;
+	min-height: 1.5em;
+	min-height: 1.5em;
+}
+
+.contenttext p:after {
+	content: "\200B";
+	display: block;
+	height: 0;
+	clear: both;
+}

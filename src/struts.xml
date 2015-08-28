@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE struts PUBLIC   
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="D:/qianqiuUploads/upload/tmp"></constant>
+	<constant name="struts.multipart.maxSize" value="1073741824" />
+	<package name="struts2.0" extends="struts-default">
+		<global-results>
+			<result name="page_index">/index.jsp</result>
+			<result name="page_login">/login.jsp</result>
+			<result name="page_scenery">/pages/editscenery.jsp</result>
+			<result name="page_scenerypic">/pages/editscenerypic.jsp</result>
+		
+
+			<result name="page_voice">/pages/sceneryvoice.jsp</result>
+			<result name="page_video">/pages/sceneryvideo.jsp</result>
+
+
+			<result name="page_video2">/pages/video.jsp</result>
+			<result name="page_error">/pages/error.jsp</result>
+			<result name="page_forward">/pages/fd_index.jsp</result>
+			<result name="page_home">/pages/fd_home.jsp</result>
+			<result name="page_intro">/pages/intro.jsp</result>
+
+			<result name="page_way">/pages/pc/way.jsp</result>
+
+
+			<result name="page_product_detail">/pages/productDetail.jsp</result>
+
+			<result name="dial_phone">/pages/mobile/phone.jsp</result>
+			<result name="page_aboutus">/pages/mobile/aboutus.jsp</result>
+			<result name="fd_page_intro">/pages/mobile/fd_intro.jsp</result>
+			<result name="page_to_here">/pages/mobile/toHere.jsp</result>
+			<result name="page_scenery_detail">/pages/mobile/scenery_detail.jsp</result>
+			<result name="page_scenery_list">/pages/mobile/scenery_list.jsp</result>
+			<result name="announcement_detail">/pages/mobile/announcementDetail.jsp</result>
+			
+		
+			<result name="page_announcement_pic">/pages/pc/editannouncement.jsp</result>
+			
+			<result name="page_door">/pages/pc/door/home.jsp</result>
+			
+		</global-results>
+		
+		<action name="index*_*" class="order.action.IndexAction"
+			method="{1}">
+		</action>
+		<action name="index*" class="order.action.IndexAction" method="{1}">
+		</action>
+		
+
+		<action name="announcement*" class="order.action.AnnouncementAction"
+			method="{1}">
+		</action>
+		<action name="partners*" class="order.action.PartnersAction"
+			method="{1}">
+		</action>
+
+		<action name="product" class="order.action.ProductAction"
+			method="productDetail">
+		</action>
+		<action name="sceneryadd" class="order.action.SceneryAction"
+			method="add">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="scenerymodify" class="order.action.SceneryAction"
+			method="modify">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="sceneryupdateVideo" class="order.action.SceneryAction"
+			method="updateVideo">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">video/x-msvideo,video/mp4,video/mpeg,video/3gp,video/x-flv</param>
+				<param name="maximumSize">1073741824</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="sceneryupdateVoice" class="order.action.SceneryAction"
+			method="updateVoice">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">audio/mpeg,audio/x-aiff,audio/basic</param>
+				<param name="maximumSize">10701096</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="scenery*" class="order.action.SceneryAction"
+			method="{1}">
+		</action>
+
+		<action name="aboutus*" class="order.action.IndexAction"
+			method="aboutus">
+		</action>
+		
+		<action name="dialPhone*" class="order.action.IndexAction"
+			method="dialPhone">
+		</action>
+
+		<action name="user*" class="order.action.UserAction" method="{1}">
+		</action>
+		<action name="store*" class="order.action.StoreAction" method="{1}">
+		</action>
+		<action name="admin*" class="order.action.AdminUserAction"
+			method="{1}">
+		</action>
+		<action name="way*" class="order.action.TheWayAction" method="{1}">
+		</action>
+		<action name="intro*" class="order.action.IntroAction" method="{1}">
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="order.db.DDO.StoreDDO" table="store">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="storeDomain" column="store_domain" />
+		<property name="storeName" column="store_name" />
+		<property name="storeSwitchImage1" column="store_switch_image1" />
+		<property name="storeSwitchImage2" column="store_switch_image2" />
+		<property name="storeSwitchImage3" column="store_switch_image3" />
+		<property name="storeSwitchImage4" column="store_switch_image4" />
+		<property name="storeSwitchImage5" column="store_switch_image5" />
+		<property name="storeDiscount" column="store_discount" />
+		<property name="storeDiscountInfo" column="store_discount_info" />
+		<property name="storeComm" column="store_comm" />
+
+	</class>
+
+	<class name="order.db.DDO.AdminUserDDO" table="adminuser">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="user_name" />
+		<property name="password" column="user_password" />
+		<property name="phone" column="user_phone" />
+		<property name="createDate" column="create_date" />
+		<property name="userStoreId" column="user_store_id" />
+
+	</class>
+	<class name="order.db.DDO.UserDDO2" table="userinfo2">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="user_name" />
+		<property name="phone" column="user_phone" />
+		<property name="createDate" column="create_date" />
+		<property name="address1" column="user_address1" />
+		<property name="storeId" column="user_store_id" />
+		<property name="userId" column="user_id" />
+	</class>
+	<class name="order.db.DDO.SceneryDDO" table="scenery">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="sceneryName" column="scenery_name" />
+		<property name="sceneryHead" column="scenery_head" />
+		<property name="sceneryDesc" column="scenery_desc" />
+		<property name="sceneryDetail" column="scenery_detail" />
+		<property name="sceneryPic1" column="scenery_pic1" />
+		<property name="sceneryPic2" column="scenery_pic2" />
+		<property name="sceneryPic3" column="scenery_pic3" />
+		<property name="sceneryPic4" column="scenery_pic4" />
+		<property name="sceneryPic5" column="scenery_pic5" />
+		<property name="qrCodeVideoPic" column="qrcode_video_pic" />
+		<property name="qrCodeVoicePic" column="qrcode_voice_pic" />
+		<property name="video" column="video" />
+
+		<property name="voice" column="voice" />
+
+		<property name="storeId" column="store_id" />
+		<property name="updateDate" column="update_date" />
+		<property name="displayOrder" column="display_order" />
+	</class>
+
+	<class name="order.db.DDO.ProductDDO" table="product">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="storeId" column="store_id" />
+		<property name="displayOrder" column="display_order" />
+		<property name="video1Name" column="video1_name" />
+		<property name="video1Desc" column="video1_desc" />
+		<property name="video1" column="video1" />
+		<property name="video2Name" column="video2_name" />
+		<property name="video2Desc" column="video2_desc" />
+		<property name="video2" column="video2" />
+		<property name="video3Name" column="video3_name" />
+		<property name="video3Desc" column="video3_desc" />
+		<property name="video3" column="video3" />
+		<property name="voice1Name" column="voice1_name" />
+		<property name="voice1Desc" column="voice1_desc" />
+		<property name="voice1" column="voice1" />
+		<property name="voice2Name" column="voice2_name" />
+		<property name="voice2Desc" column="voice2_desc" />
+		<property name="voice2" column="voice2" />
+		<property name="voice3Name" column="voice3_name" />
+		<property name="voice3Desc" column="voice3_desc" />
+		<property name="voice3" column="voice3" />
+		<property name="productDesc" column="product_desc" />
+		<property name="updateDate" column="update_date" />
+
+	</class>
+
+	<class name="order.db.DDO.IntroDDO" table="intro">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="type" column="type" />
+		<property name="detail" column="detail" />
+		<property name="storeId" column="store_id" />
+	</class>
+	<class name="order.db.DDO.TheWayDDO" table="theway">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="latitude" column="latitude" />
+		<property name="longitude" column="longitude" />
+		<property name="address" column="address" />
+		<property name="detail" column="detail" />
+		<property name="storeId" column="store_id" />
+	</class>
+
+	<class name="order.db.DDO.AnnouncementDDO" table="announcement">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="announcementName" column="announcement_name" />
+		<property name="announcementDesc" column="announcement_desc" />
+		<property name="announcementDate" column="announcement_date" />
+	</class>
+
+
+	<class name="order.db.DDO.PartnersDDO" table="partners">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" column="name" />
+		<property name="sex" column="sex" />
+		<property name="age" column="age" />
+		<property name="nativePlace" column="native_place" />
+		<property name="phone" column="phone" />
+		<property name="telephone" column="telephone" />
+		<property name="addType" column="addType" />
+		<property name="address" column="address" />
+		<property name="num" column="num" />
+		<property name="state" column="state" />
+		<property name="remark" column="remark" />
+	</class>
+</hibernate-mapping>

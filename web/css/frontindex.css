@@ -1,0 +1,41 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#dfe3e6;
+	overflow:hidden;
+	font-family: "Helvetica Neue",Helvetica,Arial;
+font-size:15px;
+}
+.pop{
+border-radius:6px;
+width:100%;
+border: 2px solid rgba(183,190,206,0.85);
+box-shadow: rgba(0,0,0,0.4) 0 0.1em 0.5em;
+border-radius: 10px;
+background: rgba(14,31,75,0.85);
+width:250px;
+color:#FFFFFF;
+margin:0px;
+padding:0px;
+font-size:1em;
+z-index:30;
+position:absolute;
+top:100px;
+padding-top:10px;
+padding-bottom:10px;
+display:none;
+}
+.pop .button{
+background-image: -webkit-linear-gradient(top, rgba(251,252,255,0.48) 0%,rgba(113,126,157,0.48) 50%,rgba(74,77,104,0.48) 51%,rgba(106,108,142,0.48) 100%);
+color:#FFFFFF;
+font-size:1em;
+width:80px;
+border-radius: 10px;
+padding-top:8px;
+padding-bottom:8px;
+margin-top:10px;
+z-index:40;
+}
+.backshade{
+background:#CCCCCC;position:absolute;width:100%;height:800px;top:0px;left:0px;opacity:0.5;display:none;z-index:10;
+}

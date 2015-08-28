@@ -1,0 +1,161 @@
+/**
+ *  gobal全局样式
+ * ----------------------
+ *  作者：叼怎么写！
+ *  时间：2014-03-21
+ *  准则：NEC
+ *  联系：wechat--shoe11414255
+ *  创意源于生活，代码如诗从你我开始
+ *  OOCSS虽好，需培养，需规范，需慢慢品尝
+ *********************************************************************************************/
+@charset "utf-8";
+/* =reset 网页样式重置
+------------------------------------------------------------------------------------------------------------------------------*/
+html { font-size:1em;-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight:rgba(0,0,0,0);-webkit-text-size-adjust:none;overflow:-moz-scrollbars-vertical;/*强制firefox出现滑动条*/}
+body { font-size:0.75em;}
+label { cursor:pointer;}
+a:link, a:visited { text-decoration:none;}
+input:focus { outline: none; }
+input,button,select,textarea{outline:none;/*-webkit-appearance:none;*//*强制去除表单自带的样式*/ }
+textarea{resize:none;/*-webkit-appearance:none;*//*强制去除textarea自带的样式*/ }
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; } /*利用阴影来填充掉input自动填充色*/
+
+textarea,input,select { background: none; border:none; margin: 0; padding: 0; }
+
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, menu, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, var { margin:0; padding:0;}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption { display: block;} /*html5设置*/
+
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea, sub{ font-size:1em;}
+body, input, button, select, textarea, sub{ font-family:Arial, sans-serif;}
+em, cite, address, optgroup { font-style:normal;}
+kbd, samp, code { font-family:monospace;}
+
+img, input, button, select, textarea { vertical-align:middle;outline:none;}
+ul, ol { list-style:none;}
+img, fieldset { border:0;}
+abbr, acronym { cursor:help; border-bottom:1px dotted black;}
+table {	width:100%; border-spacing:0; border:0;}
+table th, table td { border:0;}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0;}
+legend, hr, caption { visibility:hidden; font-size:0; width:0; height:0; line-height:0;}
+
+/**
+ * = global 统一样式
+ *******************************************************************************************************/
+/* 改变动画的效果方式*/
+* {
+  -webkit-transition-timing-function: ease-in-out;
+     -moz-transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+html {height: 100%;}
+body { position: relative; font-family:"微软雅黑"; width: 640px; max-width: 640px; min-width: 640px; height: 100%; margin: 0 auto; }
+body h1,body h2,body h3,body h4,body h5,body h6,body strong,body em {font-weight:normal; } /*微软雅体 将原有的bold属性去掉*/
+
+textarea:focus,input:focus { border: 1px solid #71b643; }
+
+/*sprite图片合并*/
+.css_sprite01 { background-image:url(../images/css_sprite01.png)!important;  background-repeat: no-repeat!important; } 
+
+/**
+ * = function 功能样式
+ *******************************************************************************************************/
+.f-ofh {overflow: hidden; height: 100%!important; } 		/*隐藏内容-overflow-hidden*/
+.f-hide { display: none!important; } 						/*隐藏内容*/
+
+.f-tc { text-align: center; }
+.f-tr { text-align: right; }
+.f-fl { float: left; }
+.f-fr { float: right; }
+.f-fixed { position: fixed; }
+.f-cur { cursor: pointer; }
+
+/*bg-background*/
+.s-bg-ddd { background: #ddd; }
+
+/**
+ * = unit 统一元件样式
+ *******************************************************************************************************/
+/**
+ * 声音元件
+ * -u-audio
+ */
+.u-audio { position: absolute; top: 40px; right: 0; width: 132px; height: 73px; z-index: 200; }
+.u-audio .res_audio { position: absolute; top: 0; left: 0; opacity: 0; height: 0; width: 0; }
+.u-audio .btn_audio { width: 100%; padding-top: 29px; height: 44px; }
+.u-audio .btn_audio strong,
+.u-audio .btn_audio .audio_open { display: inline-block; height: 44px; line-height: 44px; vertical-align: middle; }
+.u-audio .btn_audio strong { width: 57px; font-size: 24px; color: #fff; opacity: 1; }
+.u-audio .btn_audio .audio_open { position: absolute; bottom: 0; left: 56px; width: 44px; }
+.u-audio .btn_audio strong.z-hide { opacity: 0; }
+.u-audio .btn_audio strong.z-move { 
+	-webkit-transition:opacity 0.5s;
+  	   -moz-transition:opacity 0.5s;
+	    -ms-transition:opacity 0.5s;
+	     -o-transition:opacity 0.5s;
+	        transition:opacity 0.5s;
+}
+.u-audio.z-low { z-index: 1; }
+/**
+ * 视频模块
+ * -m-video
+ */
+.video-title { width: 580px; padding: 200px 30px 50px; margin-bottom: 50px; overflow: hidden; opacity: 0;
+	-webkit-transform: scale(0.2);
+	   -moz-transform: scale(0.2);
+	    -ms-transform: scale(0.2);
+	     -o-transform: scale(0.2);
+	        transform: scale(0.2);
+
+	-webkit-transition:all 0.8s;
+  	   -moz-transition:all 0.8s;
+	    -ms-transition:all 0.8s;
+	     -o-transition:all 0.8s;
+	        transition:all 0.8s;
+}
+.video-title h3 { height: 48px; overflow: hidden; font-size: 48px; margin-bottom: 30px; line-height: 100%; }
+.video-title p { height: 30px; overflow: hidden; font-size: 30px; line-height: 150%; line-height: 100%; }
+.video-con { position: relative; width: 640px; height: 400px; background: #000; }
+.video-con video { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; }
+.video-con .img { position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; }
+.video-con .img span { display: inline-block; position: absolute; top: 50%; left: 50%; width:77px; height: 77px; margin-left: -38px; margin-top: -38px; z-index: 11; background-position: 0 -233px; 
+	-webkit-animation: video_btnPlay 1s linear infinite; opacity: 1;
+	-moz-animation: video_btnPlay 1s linear infinite; opacity: 1;
+	animation: video_btnPlay 1s linear infinite; opacity: 1;
+}
+.z-animate .video-title { opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+
+/**
+ * = pluns 插件样式
+ *******************************************************************************************************/
+/*lazy-img*/
+.lazy-img,
+.lazy-finish { background-size: cover; background-repeat: no-repeat; background-position: center;}
+
+/*声音*/
+.coffee-steam-box { display: none; }
+
+/*播放按钮*/
+@-webkit-keyframes video_btnPlay{
+	0%{-webkit-transform: scale(1); opacity: 0.8;}
+	100%{-webkit-transform: scale(2); opacity: 0.3;}
+}
+@-moz-keyframes video_btnPlay{
+	0%{-moz-transform: scale(1); opacity: 0.8;}
+	100%{-moz-transform: scale(2); opacity: 0.3;}
+}
+@keyframes video_btnPlay{
+	0%{transform: scale(1); opacity: 0.8;}
+	100%{transform: scale(2); opacity: 0.3;}
+}

@@ -1,0 +1,72 @@
+body{
+
+	margin:0px;
+	padding:0px;
+	background-color:#dfe3e6;
+	overflow:hidden;
+	font-family: "Helvetica Neue",Helvetica,Arial;
+font-size:15px;
+}
+input{
+font-size:1em;
+}
+.bar{
+height:40px;
+border-bottom:#333333 solid 2px;
+background:#BF0F83;
+
+color:#FFF;
+line-height:40px;
+font-weight:bold;
+}
+
+.con{
+border-radius:6px;
+width:100%;
+border:2px  #999999 solid;
+background-color:#ffffff;
+
+margin:0px;
+padding:0px;
+
+}
+.con table{
+width:100%;
+border-collapse:collapse;
+font-weight:bold;
+}
+.con tr{
+border-bottom:1px  #dfe3e6 solid;
+height:40px;
+line-height:40px;
+}
+.con tr>td:nth-child(1){
+padding-left:5px;
+padding-right:2px;
+}
+
+.con input{
+border:0px;
+padding:0px;
+margin:0px;
+font-weight:bold;
+height:40px;
+width:100%;
+line-height:40px;
+}
+
+.registerbutton{
+height:30px;
+border-bottom: 1px solid;
+background-image: -webkit-linear-gradient(bottom, #56b148 0%,#56b148 50%,#69c55a 51%,#99e48d 100%);
+border-radius:16px;
+margin-top:20px;
+padding-top:6px;
+color:#fff;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+#scroll{
+position:absolute;z-index:1;top:40px;left:0px;bottom:0px;right:0px;background:FFFFFF;overflow:hidden;
+
+
+}
